@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='Daggie'>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Daggie's Doggie Care</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,300,600" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+  <!-- Angular -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <!-- JS -->
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body class="page" ng-controller="MainController as ctrl">
+<img src="images/daggies.jpg" alt="Daggie's Doggie Care"/>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <button ng-show="ctrl.menu" ng-click="ctrl.showServices()">Services</button>
+    <h1>Daggie's Doggie Care <i class="fas fa-paw" ng-click="ctrl.showLanding()"></i></h1>
+
+
+    <!-- Landing Page -->
+    <div class="row">
+      <div class="six columns">
+        <div class="landing" ng-show="ctrl.landing">
+          <h4>Where Caring Comes First</h4>
+          <h5>dog sitting <i class="fas fa-circle" style="font-size: .5rem;"></i> dog walking <i class="fas fa-circle" style="font-size: .5rem;"></i> check-ins</h5>
+          <h5>951-956-9229</h5>
+          <div class="icons">
+            <a href="mailto:daggiesdoggiecare@gmail.com"><i class="fas fa-envelope"></a></i>
+            <a href="https://www.facebook.com/daggiesdoggiecare/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/daggiesdoggiecare/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="six columns">
+
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="row" ng-hide="ctrl.services">
+      <i class="fas fa-times-circle" ng-click="ctrl.showLanding()"></i>
+      <div class="eight columns services" >
+        <h4>Overnight Stays</h4>
+        <h5>$55</h5>
+        <p>A minimum of 12 hours overnight with your pup in your home. Includes dinner and breakfast the next morning, as well as any walks needed. Lots and lots of cuddles.</p>
+
+        <h4>Dog Walk</h4>
+        <h5>$15</h5>
+        <p>30 minute walk</p>
+
+        <h4>Check-In Visits</h4>
+        <h5>$15</h5>
+        <p>30 minutes to provide a potty break, food, water, and play time. A shorter walk can also be provided.</p>
+      </div>
+      <div class="four columns">
+
+      </div>
+    </div>
+
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

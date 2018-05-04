@@ -1,0 +1,102 @@
+/* Background Image */
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.33;
+  position: fixed;
+  z-index: 0;
+}
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  padding-top: 7%;
+  margin-bottom: 3%;
+}
+
+
+ul {
+  list-style: none;
+  font-size: 18px;
+  padding: 1rem;
+  margin-bottom: 3%;
+  text-align: right;
+  padding-right: 5%;
+}
+
+button {
+  margin-left: 90%;
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+  background-color: #33C3F0;
+  color: white;
+  border: none;
+  -webkit-transform:translateY(3px);
+  -moz-transform:translateY(3px);
+  -ms-transform:translateY(3px);
+  -o-transform:translateY(3px);
+  transform:translateY(3px);
+}
+
+.landing, .services {
+  text-align: center;
+  margin-top: 5%;
+  position: relative;
+  padding: 5%;
+}
+
+.services, .gallery {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* Font Awesome Icons */
+
+i {
+  font-size: 3rem;
+}
+
+i.fas.fa-paw{
+  font-size: 5rem;
+  padding-left: 1rem;
+}
+
+.icons i {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 4rem;
+  color: black;
+}
+
+.icons i:hover {
+  color: #33C3F0;
+  -webkit-transform:translateY(3px);
+  -moz-transform:translateY(3px);
+  -ms-transform:translateY(3px);
+  -o-transform:translateY(3px);
+  transform:translateY(3px);
+}
+
+i.fas.fa-times-circle:hover {
+  cursor: pointer;
+
+  -webkit-animation: spin 3s infinite;
+  -moz-animation: spin 3s infinite;
+  -ms-animation: spin 3s infinite;
+  -o-animation: spin 3s infinite;
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+}
