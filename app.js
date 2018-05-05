@@ -8,16 +8,15 @@ app.controller('MainController', ['$http', function($http){
   this.menu = true; // show
   this.services = true; //hide
   this.hamburger = true;
+  this.minImg = true;
 
-  this.hideHamburger = function(){
-    this.hamburger =! this.hamburger
-  }
 
   this.showLanding = function(){
     this.landing = true;
     this.menu = true;
     this.services = true; //hide
     this.hamburger = true; //show when closing services menu
+    this.minImg = true;
   }
 
   this.showServices = function(){
@@ -25,6 +24,7 @@ app.controller('MainController', ['$http', function($http){
     this.menu = false;
     this.services = false;
     this.hamburger = false;
+    this.minImg = false;
   }
 
 
