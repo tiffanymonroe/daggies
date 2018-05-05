@@ -43,10 +43,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <button ng-show="ctrl.menu" ng-click="ctrl.showServices()">Services</button>
-
-    <h1>Daggie's Doggie Care <i class="fas fa-paw" ng-click="ctrl.showLanding()"></i></h1>
-
+      <h1>Daggie's Doggie Care <i class="fas fa-paw" ng-click="ctrl.showLanding()"></i></h1>
 
     <!-- Landing Page -->
     <div class="row">
@@ -62,6 +59,7 @@
             <a href="https://www.instagram.com/daggiesdoggiecare/"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+        <button ng-show="ctrl.menu" ng-click="ctrl.showServices()">Services</button>
       </div>
       <div class="six columns">
         <img id="min-img" ng-show="ctrl.minImg" src="images/daggies_min.jpg" alt="Wyatt">
