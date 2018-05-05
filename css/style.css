@@ -57,13 +57,17 @@ button:hover {
 
 /* Font Awesome Icons */
 
-i {
+/* i {
   font-size: 3rem;
-}
+} */
 
 i.fas.fa-paw{
   font-size: 5rem;
   padding-left: 1rem;
+}
+
+i.fas.fa-bars {
+  display: none;
 }
 
 .icons i {
@@ -82,6 +86,7 @@ i.fas.fa-paw{
   transform:translateY(3px);
 }
 
+
 i.fas.fa-times-circle:hover {
   cursor: pointer;
 
@@ -99,4 +104,24 @@ i.fas.fa-times-circle:hover {
  to {
    transform: rotate(360deg);
  }
+}
+
+@media (max-width: 921px) {
+  img {display: none;}
+  h1 {
+    font-size: 3rem;
+    padding-top: 3.5%;
+    margin-bottom: 1.5%;
+    width: 50%;
+    text-align: right;
+    border: 1px solid turquoise;
+  }
+  h2, h3, h4, h5, h6 {font-size: 2rem;}
+  button {display: none;}
+  i.fas.fa-paw {font-size: 3rem;}
+  i.fas.fa-bars {
+    display: block;
+    font-size: 3rem;
+    margin-top: 3%;
+  }
 }

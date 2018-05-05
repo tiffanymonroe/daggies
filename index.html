@@ -44,12 +44,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <button ng-show="ctrl.menu" ng-click="ctrl.showServices()">Services</button>
+
     <h1>Daggie's Doggie Care <i class="fas fa-paw" ng-click="ctrl.showLanding()"></i></h1>
 
 
     <!-- Landing Page -->
     <div class="row">
       <div class="six columns">
+        <i class="fas fa-bars" ng-show="ctrl.hamburger" ng-click="ctrl.showServices()"></i>
         <div class="landing" ng-show="ctrl.landing">
           <h4>Where Caring Comes First</h4>
           <h5>dog sitting <i class="fas fa-circle" style="font-size: .5rem;"></i> dog walking <i class="fas fa-circle" style="font-size: .5rem;"></i> check-ins</h5>
